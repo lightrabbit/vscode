@@ -33,6 +33,7 @@
     "minimist": "1.2.0",
     "native-keymap": "1.2.1",
     "node-pty": "0.6.2",
+    "pinyinlite": "^1.2.0",
     "semver": "4.3.6",
     "v8-profiler": "jrieken/v8-profiler#vscode",
     "vscode-debugprotocol": "1.18.0",

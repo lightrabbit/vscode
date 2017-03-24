@@ -331,8 +331,8 @@ export enum SubstringMatching {
 	Contiguous,
 	Separate
 }
-
-export const fuzzyContiguousFilter = or(matchesPrefix, matchesCamelCase, matchesContiguousSubString);
+import { or as pinyinFilterOr } from 'vs/base/common/pinyinFilter';
+export const fuzzyContiguousFilter = pinyinFilterOr('', matchesPrefix, matchesCamelCase, matchesContiguousSubString);
 const fuzzySeparateFilter = or(matchesPrefix, matchesCamelCase, matchesSubString);
 const fuzzyRegExpCache = new BoundedLinkedMap<RegExp>(10000); // bounded to 10000 elements
 
